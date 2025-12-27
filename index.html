@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>順番待ち状況</title>
+<style>
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    text-align: center;
+    background: #f5f5f5;
+    padding: 20px;
+  }
+  .box {
+    background: #fff;
+    border-radius: 12px;
+    padding: 24px;
+    max-width: 420px;
+    margin: 0 auto;
+    box-shadow: 0 4px 10px rgba(0,0,0,.08);
+  }
+  h1 {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+  .item {
+    font-size: 20px;
+    margin: 14px 0;
+  }
+  .big {
+    font-size: 28px;
+    font-weight: bold;
+  }
+  .time {
+    font-size: 22px;
+  }
+  .note {
+    margin-top: 16px;
+    font-size: 12px;
+    color: #666;
+  }
+</style>
+</head>
+<body>
+
+<div class="box">
+  <h1>現在のご案内状況</h1>
+
+  <div class="item">
+    現在：<span class="big" id="wait">-</span> 人待ち
+  </div>
+
+  <div class="item">
+    対応中の予約番号：<span class="big" id="number">-</span> 番
+  </div>
+
+  <div class="item time">
+    対応時間：<span id="time">-</span>
+  </div>
+
+  <div class="note">
+    ※情報は随時更新されます
+  </div>
+</div>
+
+</body>
+</html>
